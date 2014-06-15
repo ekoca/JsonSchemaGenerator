@@ -1,0 +1,119 @@
+JsonSchemaGenerator
+===============
+
+Json schema generator from POJOs using Jackson 2.4.0 (This also supports jackson v1.8.3 library)
+
+To run project:
+
+* Checkout project
+* Run the main method of JsonSchemaGenerator
+* See output and folders called "schema-responses and schema-jsons"
+* That's it
+
+
+Sample json schemas:
+
+-------------------------- JsonOperation.json --------------------------
+{
+  "type" : "object",
+  "properties" : {
+    "request" : {
+      "type" : "object",
+      "properties" : {
+        "requestType" : {
+          "type" : "string"
+        },
+        "data" : {
+          "type" : "object",
+          "properties" : {
+            "username" : {
+              "type" : "string"
+            },
+            "email" : {
+              "type" : "string"
+            },
+            "password" : {
+              "type" : "string"
+            },
+            "birthday" : {
+              "type" : "string"
+            },
+            "coinsPackage" : {
+              "type" : "string"
+            },
+            "coins" : {
+              "type" : "string"
+            },
+            "transactionId" : {
+              "type" : "string"
+            },
+            "isLoggedIn" : {
+              "type" : "boolean",
+              "required" : true
+            }
+          }
+        }
+      }
+    },
+    "response" : {
+      "type" : "object",
+      "properties" : {
+        "requestType" : {
+          "type" : "string"
+        },
+        "data" : {
+          "type" : "object",
+          "properties" : {
+            "status" : {
+              "type" : "string",
+              "enum" : [ "OK", "ERROR" ]
+            },
+            "errorCode" : {
+              "type" : "string",
+              "enum" : [ "ERROR_INVALID_LOGIN", "ERROR_USERNAME_ALREADY_TAKEN", "ERROR_EMAIL_ALREADY_TAKEN" ]
+            },
+            "expiry" : {
+              "type" : "string"
+            },
+            "coins" : {
+              "type" : "integer"
+            },
+            "email" : {
+              "type" : "string"
+            },
+            "birthday" : {
+              "type" : "string"
+            },
+            "pictureUrl" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+-------------------------- Person.json --------------------------
+{
+  "type" : "object",
+  "properties" : {
+    "name" : {
+      "type" : "string"
+    },
+    "age" : {
+      "type" : "integer"
+    }
+  }
+}
+-------------------------- StatusResponse.json --------------------------
+{
+  "type" : "object",
+  "properties" : {
+    "status" : {
+      "type" : "integer"
+    },
+    "message" : {
+      "type" : "string"
+    }
+  }
+}
