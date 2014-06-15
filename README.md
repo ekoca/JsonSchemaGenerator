@@ -13,6 +13,7 @@ To run project:
 
 Sample json schemas:
 
+<pre>
 -------------------------- JsonOperation.json --------------------------
 {
   "type" : "object",
@@ -117,3 +118,4 @@ Sample json schemas:
     }
   }
 }
+</pre>
