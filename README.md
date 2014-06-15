@@ -6,9 +6,9 @@ Json schema generator from POJOs using Jackson 2.4.0 (This also supports jackson
 To run project:
 
 * Checkout project
-* Run the main method of JsonSchemaGenerator
+* Run the main method of JsonSchemaGenerator class
 * See output and folders called "schema-responses and schema-jsons"
-* That's it
+* That's it :)
 
 
 Sample json schemas:
