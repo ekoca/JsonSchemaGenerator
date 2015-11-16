@@ -10,6 +10,8 @@ To run project:
 * See output and folders called "schema-responses and schema-jsons"
 * That's it :)
 
+TODO:
+* Make this to gradle project
 
 Sample json schemas:
 
