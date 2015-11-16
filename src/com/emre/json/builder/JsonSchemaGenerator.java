@@ -28,10 +28,6 @@ public class JsonSchemaGenerator {
 	// static Class<?>[] clazz =
 	static Map<String, Class<?>[]> classes = getFoldedrsAndClasses();
 
-	// { StatusResponse.class, Cart.class,
-	// LeadAllocationResult.class, PromoResponse.class,
-	// UserValidationResponse.class, FS2014JanConditionJson.class };
-
 	public static void main(String[] args) throws JsonGenerationException,
 			IOException {
 
