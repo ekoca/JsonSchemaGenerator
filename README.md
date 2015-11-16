@@ -5,13 +5,16 @@ Json schema generator from POJOs using Jackson 2.4.0 (This also supports jackson
 
 To run project:
 
-* Checkout project
+* Clone this project
 * Run the main method of JsonSchemaGenerator class
-* See output and folders called "schema-responses and schema-jsons"
-* That's it :)
+* Take a look at folders called "schema-responses and schema-jsons"
+* See the json schemas for input classes
 
 TODO:
 * Make this to gradle project
+
+Hint:
+* Use jenkins to build schemas
 
 Sample json schemas:
 
