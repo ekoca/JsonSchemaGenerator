@@ -10,9 +10,6 @@ To run project:
 * Take a look at folders called "schema-responses and schema-jsons"
 * See the json schemas for input classes
 
-TODO:
-* Make this to gradle project
-
 Hint:
 * Use jenkins to build schemas
 
